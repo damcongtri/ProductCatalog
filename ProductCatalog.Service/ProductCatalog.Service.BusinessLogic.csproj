@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data.ProductCatalogRepository\ProductCatalog.Repository.csproj" />
+    <ProjectReference Include="..\ProductCatalog.Data\ProductCatalog.Model.Database.csproj" />
+    <ProjectReference Include="..\ProductCatalog.Helper\ProductCatalog.Service.Helper.csproj" />
+    <ProjectReference Include="..\ProductCatalog.Repository\ProductCatalog.Repository.csproj" />
+    <ProjectReference Include="..\ProductCatalog.Web\ProductCatalog.Model.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
